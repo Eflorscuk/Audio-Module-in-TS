@@ -28,7 +28,6 @@
     "@types/multer": "^1.4.11",
     "express": "^4.19.2",
     "multer": "^1.4.5-lts.1",
-    "vlc-client": "^1.1.1",
     "vlc-player": "^2.0.0"
   }
 }
