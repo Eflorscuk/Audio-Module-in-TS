@@ -7,4 +7,8 @@ router.get('/', (req: Request, res: Response) => {
     res.send("Está funcionando");
 })
 
+router.get('/play_sound', (req: Request, res: Response) => {
+    res.send("Áudio tocando!");
+});
+
 export default router;
