@@ -1,14 +1,24 @@
 # Objetivo
 Testes com módulo de áudio utilizando a biblioteca VLC.
 
-Rode primeiro
+## Packages
+Instale os pacotes na raiz do seu projeto:
+``` sh
+    npm install
+```
+
+## Passos
+1. Rode o projeto com:
 ``` sh
     npm run dev
 ```
 
-em outro terminal
-``` 
-    vlc -I http --http-port 8000 --extraintf http --http-password test
+2. No Postman, realize os testes de upload de um arquivo:
+
+```
+    localhost:5000/api/play_sound
 ```
 
-então abra o vlc na sua GUI.
+Para o teste funcionar, coloque um áudio em value como segue o exemplo da seguinte imagem:
+
+![alt text](<Screenshot from 2024-07-22 17-38-39.png>)
