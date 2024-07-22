@@ -1,6 +1,6 @@
 import express from 'express';
 import home from './routes/route';
-import audioRoutes from './routes/audioRoutes';
+import audioRoutes from './routes/audioRoute';
 
 const app = express();
 const port = 5000;
