@@ -9,10 +9,11 @@ describe('Testando a rota /', () => {
   });
 });
 
-describe('Testando a rota /play_sound', () => {
-  it('Deve retornar status 200 e a mensagem "Áudio tocando!"', async () => {
-    const response = await request(app).post('/api/play_sound');
-    expect(response.status).toBe(200);
-    expect(response.text).toBe("Áudio tocando!");
+describe('Testando a rota /api/play_sound', () => {
+  it('Deve retornar 400 e a mensagem "Sem arquivo"', async () => {
+    const response = await request(app).post('/api/play_sound').send();
+
+    expect(response.status).toBe(400);
+    expect(response.text).toBe('Sem arquivo');
   });
 });
